@@ -28,11 +28,11 @@ def confirm_and_delete_directories(directories: list):
             if confirm == "s":
                 try:
                     shutil.rmtree(d, onerror=handle_remove_readonly)
-                    print(f"✅ Diretório apagado: {d}")
+                    print(f" Diretório apagado: {d}")
                 except Exception as e:
-                    print(f"⚠️ Falha ao apagar {d}: {e}")
+                    print(f" Falha ao apagar {d}: {e}")
             else:
-                print(f"🛑 Diretório mantido: {d}")
+                print(f"Diretório mantido: {d}")
 
 def ensure_directories(dirs: list):
     for d in dirs:
