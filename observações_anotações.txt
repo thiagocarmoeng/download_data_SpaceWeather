@@ -1,0 +1,49 @@
+
+🕒 start_date_time
+Significado: É a data e hora em que a contagem foi registrada.
+
+Formato: YYYY-MM-DD HH:MM:SS
+
+Importância: É o índice temporal da série. Todas as outras medições estão associadas a esse instante de tempo.
+
+📈 RCORR_E (Efficiency Corrected Count Rate)
+Significado: Contagem de nêutrons corrigida pela eficiência do detector.
+
+Para que serve: Corrige flutuações relacionadas a variações na instrumentação (ex: mudança de tubo, eletrônica, etc.).
+
+Importância: Mais representativa da realidade física, útil para comparações entre diferentes estações.
+
+🧪 RUNCORR (Uncorrected Count Rate)
+Significado: Contagem sem qualquer correção — ou seja, os dados brutos medidos pelo detector.
+
+Para que serve: Útil para controle de qualidade e validação das correções.
+
+Importância: Pode conter ruídos, erros por falhas no sistema ou influência atmosférica.
+
+🌡️ RCORR_P (Pressure Corrected Count Rate)
+Significado: Contagem de nêutrons corrigida pela pressão atmosférica local.
+
+Para que serve: A pressão afeta a quantidade de nêutrons que chegam ao detector (mais pressão → mais absorção).
+
+Importância: Corrige variações que não são de origem cósmica, mas sim meteorológicas.
+
+Dados de protons: Satelite GOES 
+NMDB -> O NMDB permite visualizar plots prontos com fluxo de prótons 
+        (>10 MeV, >50 MeV, >100 MeV), mas não oferece os dados numéricos diretamente via download (como CSV). 
+        É útil para visualização, mas limitado para análise quantitativa automatizada.
+
+NOAA/NCEI -> O caminho mais completo é utilizar a API da NOAA (National Oceanic and Atmospheric Administration), 
+             que disponibiliza dados históricos do GOES.
+
+Indice kp
+    Valor kp	Significado	                            Equivalente Numérico
+    0o	        Muito tranquilo	                        0.0
+    2-	        Levemente abaixo de 2	                ~1.7
+    3+	        Levemente acima de 3	                ~3.3
+    5o	        Limite para tempestade geomagnética	    5.0
+    7+	        Atividade severa	                    ~7.3
+    9o	        Máxima atividade registrada	            9.0
+
+
+    Teste estações:
+    AATB, APty, CALG, CALM, DOMB, DOMC, DRBS, FSMT, INVK, IRKT, IRK2, JBGO, JUNG, JUNG1, KERG, KIEL, KIEL2, LMKS, MRNY, MWSB, MWSN, NANM, NEU3, NEWK, NRLK, NVBK, OULU, PSNM, PTFM, PWNK, ROME, SANB, SNAE, SOPB, SOPO, TERA, THUL, TXBY, YKTK
